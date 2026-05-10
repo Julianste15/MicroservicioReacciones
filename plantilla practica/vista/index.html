@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reacciones en Vivo - Spotify</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>Reproductor - Reacciones</h1>
+    <div>
+        <button id="btnConectar" onclick="conectar()">Conectar</button>
+        <button id="btnDesconectar" onclick="desconectar()" disabled>Desconectar</button>
+    </div>
+    <hr>
+    <div>
+        <h3>Envía tu reacción:</h3>
+        <div id="reacciones">
+            <i class="fa-solid fa-thumbs-up reaction icon-like" data-reaction="like" onclick="enviarReactionServidor(event)"></i>
+            <i class="fa-solid fa-heart reaction icon-heart" data-reaction="heart" onclick="enviarReactionServidor(event)"></i>
+            <i class="fa-solid fa-face-laugh-beam reaction icon-fun" data-reaction="fun" onclick="enviarReactionServidor(event)"></i>
+            <i class="fa-solid fa-face-sad-tear reaction icon-sad" data-reaction="sad" onclick="enviarReactionServidor(event)"></i>
+        </div>
+    </div>
+    <hr>
+    <div id="contenedor-mensajes">
+        <h3>Reacciones recibidas:</h3>
+        <div id="mensajes">
+            <!-- Las reacciones se mostrarán aquí -->
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sockjs-client@1/dist/sockjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/stompjs@2.3.3/lib/stomp.min.js"></script>
+    <script src="funciones.js"></script>
+    <script src="animaciones.js"></script>
+</body>
+</html>
