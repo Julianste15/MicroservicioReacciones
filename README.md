@@ -1,5 +1,13 @@
 # Microservicio de Reacciones con WebSockets (STOMP)
 
+> Servicio de reacciones en tiempo real con WebSockets (STOMP): varios usuarios envían "likes" y reacciones animadas mientras escuchan una canción.
+
+**🇪🇸 Español:** Backend en Spring Boot con WebSocket + STOMP que retransmite reacciones (likes, corazones, risas, etc.) a todos los clientes conectados. El frontend en JavaScript vanilla muestra animaciones de burbujas flotantes y usa SockJS como respaldo de compatibilidad.
+
+**🇺🇸 English:** A Spring Boot WebSocket (STOMP) service that broadcasts live reactions (likes, hearts, laughs) to every connected client. The vanilla-JS frontend renders floating-bubble animations and uses SockJS for browser compatibility.
+
+---
+
 Este proyecto es un sistema de comunicación en tiempo real que permite a múltiples usuarios enviar "reacciones" (likes, corazones, risas, etc.) mientras escuchan una canción. El servidor retransmite estas reacciones a todos los clientes conectados, quienes las visualizan mediante animaciones de burbujas flotantes.
 
 ## 🚀 Tecnologías Utilizadas
